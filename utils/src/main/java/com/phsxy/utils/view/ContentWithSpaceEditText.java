@@ -48,7 +48,7 @@ public class ContentWithSpaceEditText extends AppCompatEditText {
 
     private void parseAttributeSet(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.utils_ContentWithSpaceEditText, 0, 0);
-        contentType = ta.getInt(R.styleable.utils_ContentWithSpaceEditText_input_type, 0);
+        contentType = ta.getInt(R.styleable.utils_ContentWithSpaceEditText_utils_input_type, 0);
         // 必须调用recycle
         ta.recycle();
         initType();
