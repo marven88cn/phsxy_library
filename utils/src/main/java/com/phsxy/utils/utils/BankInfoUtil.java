@@ -1,4 +1,4 @@
-package com.phsxy.utils;
+package com.phsxy.utils.utils;
 
 import java.util.regex.Pattern;
 
@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * Copyright  : Copyright (c) 2018
  * Company    : 普华
  * Author     : marven
- * Date       : 2019/3/7 19:29
+ * Date       : 2019/3/9 19:29
  */
 public class BankInfoUtil  {
         String s1 = "^(621096|621098|622150|622151|622181|622188|622199|955100|621095|620062|621285|621798|621799|621797|620529|621622|621599|621674|623218|623219)\\d{13}$";
@@ -456,232 +456,234 @@ public BankInfoUtil(String totalBankcode) {
         this.totalBankcode = totalBankcode;
         }
 
-/**
- * 获取银行编码
- *
- * @return
- */
-public String getBankId() {
-        if (Pattern.matches(s1, totalBankcode) || Pattern.matches(s2, totalBankcode) || Pattern.matches(s3, totalBankcode)) {
-        return "100";
-        } else if (Pattern.matches(s4, totalBankcode) || Pattern.matches(s5, totalBankcode) || Pattern.matches(s6, totalBankcode) || Pattern.matches(s7, totalBankcode) || Pattern.matches(s8, totalBankcode) || Pattern.matches(s9, totalBankcode) || Pattern.matches(s10, totalBankcode) || Pattern.matches(s11, totalBankcode) || Pattern.matches(s12, totalBankcode) || Pattern.matches(s13, totalBankcode)) {
-        return "102";
-        } else if (Pattern.matches(s14, totalBankcode) || Pattern.matches(s15, totalBankcode) || Pattern.matches(s16, totalBankcode) || Pattern.matches(s17, totalBankcode) || Pattern.matches(s18, totalBankcode)) {
-        return "103";
-        } else if (Pattern.matches(s19, totalBankcode) || Pattern.matches(s20, totalBankcode) || Pattern.matches(s21, totalBankcode) || Pattern.matches(s22, totalBankcode) || Pattern.matches(s23, totalBankcode) || Pattern.matches(s24, totalBankcode) || Pattern.matches(s25, totalBankcode)) {
-        return "104";
-        } else if (Pattern.matches(s26, totalBankcode) || Pattern.matches(s27, totalBankcode) || Pattern.matches(s28, totalBankcode) || Pattern.matches(s29, totalBankcode) || Pattern.matches(s30, totalBankcode) || Pattern.matches(s31, totalBankcode) || Pattern.matches(s32, totalBankcode) || Pattern.matches(s33, totalBankcode)) {
-        return "105";
-        } else if (Pattern.matches(s34, totalBankcode) || Pattern.matches(s35, totalBankcode) || Pattern.matches(s36, totalBankcode) || Pattern.matches(s37, totalBankcode) || Pattern.matches(s38, totalBankcode) || Pattern.matches(s39, totalBankcode) || Pattern.matches(s40, totalBankcode)) {
-        return "301";
-        } else if (Pattern.matches(s41, totalBankcode) || Pattern.matches(s42, totalBankcode) || Pattern.matches(s43, totalBankcode) || Pattern.matches(s44, totalBankcode) || Pattern.matches(s45, totalBankcode) || Pattern.matches(s46, totalBankcode)) {
-        return "308";
-        } else if (Pattern.matches(s47, totalBankcode) || Pattern.matches(s48, totalBankcode) || Pattern.matches(s49, totalBankcode)) {
-        return "305";
-        } else if (Pattern.matches(s50, totalBankcode) || Pattern.matches(s51, totalBankcode) || Pattern.matches(s52, totalBankcode) || Pattern.matches(s53, totalBankcode) || Pattern.matches(s54, totalBankcode)) {
-        return "303";
-        } else if (Pattern.matches(s55, totalBankcode) || Pattern.matches(s56, totalBankcode) || Pattern.matches(s57, totalBankcode) || Pattern.matches(s58, totalBankcode)) {
-        return "302";
-        } else if (Pattern.matches(s59, totalBankcode) || Pattern.matches(s60, totalBankcode)) {
-        return "304";
-        } else if (Pattern.matches(s61, totalBankcode) || Pattern.matches(s62, totalBankcode) || Pattern.matches(s63, totalBankcode) || Pattern.matches(s64, totalBankcode)) {
-        return "307";
-        } else if (Pattern.matches(s65, totalBankcode) || Pattern.matches(s66, totalBankcode) || Pattern.matches(s67, totalBankcode) || Pattern.matches(s68, totalBankcode) || Pattern.matches(s69, totalBankcode)) {
-        return "309";
-        }else if (Pattern.matches(s70, totalBankcode) || Pattern.matches(s71, totalBankcode) || Pattern.matches(s72, totalBankcode)) {
-        return "401";
-        } else if (Pattern.matches(s73, totalBankcode) || Pattern.matches(s74, totalBankcode) || Pattern.matches(s75, totalBankcode) || Pattern.matches(s76, totalBankcode) || Pattern.matches(s77, totalBankcode)) {
-        return "310";
-        } else if (Pattern.matches(s79, totalBankcode) || Pattern.matches(s80, totalBankcode) || Pattern.matches(s81, totalBankcode) || Pattern.matches(s82, totalBankcode)) {
-        return "306";
-        } else if (Pattern.matches(s83, totalBankcode)) {
-        return "317";
-        } else if (Pattern.matches(s84, totalBankcode)) {
-        return "413";
-        } else if (Pattern.matches(s85, totalBankcode) || Pattern.matches(s86, totalBankcode)) {
-        return "426";
-        } else if (Pattern.matches(s87, totalBankcode) || Pattern.matches(s88, totalBankcode)) {
-        return "412";
-        } else if (Pattern.matches(s89, totalBankcode) || Pattern.matches(s90, totalBankcode) || Pattern.matches(s91, totalBankcode)) {
-        return "440";
-        } else if (Pattern.matches(s92, totalBankcode) || Pattern.matches(s93, totalBankcode) || Pattern.matches(s94, totalBankcode)) {
-        return "1501";
-        } else if (Pattern.matches(s95, totalBankcode) || Pattern.matches(s96, totalBankcode)) {
-        return "424";
-        } else if (Pattern.matches(s97, totalBankcode) || Pattern.matches(s98, totalBankcode) || Pattern.matches(s99, totalBankcode)) {
-        return "408";
-        } else if (Pattern.matches(s100, totalBankcode) || Pattern.matches(s101, totalBankcode)) {
-        return "403";
-        } else if (Pattern.matches(s102, totalBankcode) || Pattern.matches(s103, totalBankcode)) {
-        return "1418";
-        } else if (Pattern.matches(s104, totalBankcode) || Pattern.matches(s105, totalBankcode) || Pattern.matches(s106, totalBankcode) || Pattern.matches(s107, totalBankcode)) {
-        return "3000";
-        } else if (Pattern.matches(s108, totalBankcode) || Pattern.matches(s109, totalBankcode)) {
-        return "3034";
-        } else if (Pattern.matches(s110, totalBankcode) || Pattern.matches(s111, totalBankcode)) {
-        return "3010";
-        } else if (Pattern.matches(s112, totalBankcode) || Pattern.matches(s113, totalBankcode) || Pattern.matches(s114, totalBankcode)) {
-        return "3001";
-        } else if (Pattern.matches(s115, totalBankcode)) {
-        return "1554";
-        } else if (Pattern.matches(s116, totalBankcode)) {
-        return "1404";
-        } else if (Pattern.matches(s117, totalBankcode)) {
-        return "1405";
-        } else if (Pattern.matches(s118, totalBankcode) || Pattern.matches(s119, totalBankcode)) {
-        return "1415";
-        } else if (Pattern.matches(s133, totalBankcode) || Pattern.matches(s134, totalBankcode)) {
-        return "311";
-        } else if (Pattern.matches(s138, totalBankcode) || Pattern.matches(s139, totalBankcode)) {
-        return "316";
-        } else if (Pattern.matches(s140, totalBankcode) || Pattern.matches(s141, totalBankcode) || Pattern.matches(s142, totalBankcode) || Pattern.matches(s143, totalBankcode)) {
-        return "3002";
-        } else if (Pattern.matches(s144, totalBankcode) || Pattern.matches(s145, totalBankcode) || Pattern.matches(s146, totalBankcode)) {
-        return "402";
-        } else if (Pattern.matches(s147, totalBankcode) || Pattern.matches(s148, totalBankcode) || Pattern.matches(s149, totalBankcode)) {
-        return "405";
-        } else if (Pattern.matches(s150, totalBankcode) || Pattern.matches(s151, totalBankcode) || Pattern.matches(s152, totalBankcode)) {
-        return "451";
-        } else if (Pattern.matches(s153, totalBankcode) || Pattern.matches(s154, totalBankcode)) {
-        return "414";
-        } else if (Pattern.matches(s155, totalBankcode) || Pattern.matches(s156, totalBankcode) || Pattern.matches(s157, totalBankcode) || Pattern.matches(s158, totalBankcode)) {
-        return "417";
-        } else if (Pattern.matches(s159, totalBankcode) || Pattern.matches(s160, totalBankcode) || Pattern.matches(s161, totalBankcode)) {
-        return "420";
-        } else if (Pattern.matches(s162, totalBankcode) || Pattern.matches(s163, totalBankcode)) {
-        return "422";
-        } else if (Pattern.matches(s164, totalBankcode) || Pattern.matches(s165, totalBankcode)) {
-        return "427";
-        } else if (Pattern.matches(s166, totalBankcode) || Pattern.matches(s167, totalBankcode) || Pattern.matches(s168, totalBankcode)) {
-        return "428";
-        } else if (Pattern.matches(s169, totalBankcode)) {
-        return "1528";
-        } else if (Pattern.matches(s170, totalBankcode) || Pattern.matches(s171, totalBankcode) || Pattern.matches(s172, totalBankcode)) {
-        return "430";
-        } else if (Pattern.matches(s173, totalBankcode) || Pattern.matches(s174, totalBankcode) || Pattern.matches(s175, totalBankcode)) {
-        return "435";
-        } else if (Pattern.matches(s176, totalBankcode) || Pattern.matches(s177, totalBankcode)) {
-        return "436";
-        } else if (Pattern.matches(s178, totalBankcode) || Pattern.matches(s179, totalBankcode)) {
-        return "441";
-        } else if (Pattern.matches(s180, totalBankcode) || Pattern.matches(s181, totalBankcode) || Pattern.matches(s182, totalBankcode)) {
-        return "442";
-        } else if (Pattern.matches(s183, totalBankcode) || Pattern.matches(s184, totalBankcode)) {
-        return "447";
-        } else if (Pattern.matches(s185, totalBankcode) || Pattern.matches(s186, totalBankcode)) {
-        return "450";
-        } else if (Pattern.matches(s187, totalBankcode) || Pattern.matches(s188, totalBankcode)) {
-        return "457";
-        } else if (Pattern.matches(s189, totalBankcode) || Pattern.matches(s190, totalBankcode) || Pattern.matches(s191, totalBankcode)) {
-        return "458";
-        } else if (Pattern.matches(s192, totalBankcode) || Pattern.matches(s193, totalBankcode) || Pattern.matches(s194, totalBankcode) || Pattern.matches(s195, totalBankcode) || Pattern.matches(s196, totalBankcode)) {
-        return "459";
-        } else if (Pattern.matches(s197, totalBankcode) || Pattern.matches(s198, totalBankcode) || Pattern.matches(s199, totalBankcode) || Pattern.matches(s200, totalBankcode)) {
-        return "461";
-        } else if (Pattern.matches(s201, totalBankcode) || Pattern.matches(s202, totalBankcode) || Pattern.matches(s203, totalBankcode) || Pattern.matches(s204, totalBankcode)) {
-        return "464";
-        } else if (Pattern.matches(s205, totalBankcode) || Pattern.matches(s206, totalBankcode) || Pattern.matches(s207, totalBankcode)) {
-        return "479";
-        } else if (Pattern.matches(s208, totalBankcode) || Pattern.matches(s209, totalBankcode) || Pattern.matches(s210, totalBankcode) || Pattern.matches(s211, totalBankcode)) {
-        return "1518";
-        } else if (Pattern.matches(s212, totalBankcode) || Pattern.matches(s213, totalBankcode) || Pattern.matches(s214, totalBankcode)) {
-        return "1401";
-        } else if (Pattern.matches(s215, totalBankcode) || Pattern.matches(s216, totalBankcode)) {
-        return "473";
-        } else if (Pattern.matches(s217, totalBankcode) || Pattern.matches(s218, totalBankcode)) {
-        return "474";
-        } else if (Pattern.matches(s219, totalBankcode) || Pattern.matches(s220, totalBankcode)) {
-        return "478";
-        } else if (Pattern.matches(s221, totalBankcode) || Pattern.matches(s222, totalBankcode) || Pattern.matches(s223, totalBankcode)) {
-        return "491";
-        } else if (Pattern.matches(s224, totalBankcode) || Pattern.matches(s225, totalBankcode) || Pattern.matches(s226, totalBankcode) || Pattern.matches(s227, totalBankcode) || Pattern.matches(s228, totalBankcode)) {
-        return "1518";
-        } else if (Pattern.matches(s229, totalBankcode) || Pattern.matches(s230, totalBankcode)) {
-        return "1528";
-        } else if (Pattern.matches(s231, totalBankcode) || Pattern.matches(s232, totalBankcode)) {
-        return "1417";
-        } else if (Pattern.matches(s235, totalBankcode) || Pattern.matches(s236, totalBankcode)) {
-        return "1424";
-        } else if (Pattern.matches(s237, totalBankcode)) {
-        return "1438";
-        } else if (Pattern.matches(s238, totalBankcode) || Pattern.matches(s239, totalBankcode)) {
-        return "1439";
-        } else if (Pattern.matches(s240, totalBankcode) || Pattern.matches(s241, totalBankcode)) {
-        return "1515";
-        } else if (Pattern.matches(s242, totalBankcode) || Pattern.matches(s243, totalBankcode)) {
-        return "313";
-        } else if (Pattern.matches(s244, totalBankcode)) {
-        return "1532";
-        } else if (Pattern.matches(s246, totalBankcode)) {
-        return "1438";
-        } else if (Pattern.matches(s247, totalBankcode)) {
-        return "1503";
-        } else if (Pattern.matches(s248, totalBankcode)) {
-        return "1434";
-        } else if (Pattern.matches(s251, totalBankcode) || Pattern.matches(s252, totalBankcode)) {
-        return "1508";
-        } else if (Pattern.matches(s253, totalBankcode) || Pattern.matches(s254, totalBankcode)) {
-        return "1512";
-        } else if (Pattern.matches(ss254, totalBankcode)) {
-        return "1504";
-        } else if (Pattern.matches(s255, totalBankcode)) {
-        return "1523";
-        } else if (Pattern.matches(s257, totalBankcode) || Pattern.matches(s258, totalBankcode) || Pattern.matches(s256, totalBankcode)) {
-        return "495";
-        } else if (Pattern.matches(s259, totalBankcode) || Pattern.matches(s260, totalBankcode)) {
-        return "481";
-        } else if (Pattern.matches(s261, totalBankcode)) {
-        return "475";
-        } else if (Pattern.matches(s262, totalBankcode) || Pattern.matches(s263, totalBankcode)) {
-        return "462";
-        } else if (Pattern.matches(s264, totalBankcode) || Pattern.matches(s265, totalBankcode)) {
-        return "463";
-        } else if (Pattern.matches(s266, totalBankcode)) {
-        return "455";
-        } else if (Pattern.matches(s267, totalBankcode) || Pattern.matches(s268, totalBankcode) || Pattern.matches(s269, totalBankcode)) {
-        return "448";
-        } else if (Pattern.matches(s270, totalBankcode) || Pattern.matches(s271, totalBankcode) || Pattern.matches(s272, totalBankcode)) {
-        return "443";
-        } else if (Pattern.matches(s273, totalBankcode) || Pattern.matches(s274, totalBankcode)) {
-        return "439";
-        } else if (Pattern.matches(s275, totalBankcode) || Pattern.matches(s276, totalBankcode)) {
-        return "438";
-        } else if (Pattern.matches(s277, totalBankcode) || Pattern.matches(s278, totalBankcode)) {
-        return "437";
-        } else if (Pattern.matches(s279, totalBankcode)) {
-        return "433";
-        } else if (Pattern.matches(s282, totalBankcode) || Pattern.matches(s283, totalBankcode)) {
-        return "423";
-        } else if (Pattern.matches(s284, totalBankcode)) {
-        return "421";
-        } else if (Pattern.matches(s285, totalBankcode)) {
-        return "419";
-        } else if (Pattern.matches(s286, totalBankcode)) {
-        return "418";
-        } else if (Pattern.matches(s287, totalBankcode) || Pattern.matches(s288, totalBankcode)) {
-        return "411";
-        } else if (Pattern.matches(s290, totalBankcode)) {
-        return "3036";
-        } else if (Pattern.matches(s291, totalBankcode)) {
-        return "3026";
-        } else if (Pattern.matches(s292, totalBankcode)) {
-        return "3023";
-        } else if (Pattern.matches(s293, totalBankcode)) {
-        return "3025";
-        } else if (Pattern.matches(s294, totalBankcode) || Pattern.matches(s295, totalBankcode) || Pattern.matches(s296, totalBankcode) || Pattern.matches(s297, totalBankcode)) {
-        return "3003";
-        } else if (Pattern.matches(s299, totalBankcode)) {
-        return "404";
-        } else if (Pattern.matches(s300, totalBankcode) || Pattern.matches(s301, totalBankcode)) {
-        return "409";
-        }  else if (Pattern.matches(s304, totalBankcode) || Pattern.matches(s305, totalBankcode) || Pattern.matches(s306, totalBankcode) || Pattern.matches(s307, totalBankcode)) {
-        return "3005";
-        }
-        return bankId;
-        }
+        /**
+         * 获取银行编码
+         * @return 返回银行编码 eg 100/102
+         */
+        public String getBankId() {
+                if (Pattern.matches(s1, totalBankcode) || Pattern.matches(s2, totalBankcode) || Pattern.matches(s3, totalBankcode)) {
+                return "100";
+                } else if (Pattern.matches(s4, totalBankcode) || Pattern.matches(s5, totalBankcode) || Pattern.matches(s6, totalBankcode) || Pattern.matches(s7, totalBankcode) || Pattern.matches(s8, totalBankcode) || Pattern.matches(s9, totalBankcode) || Pattern.matches(s10, totalBankcode) || Pattern.matches(s11, totalBankcode) || Pattern.matches(s12, totalBankcode) || Pattern.matches(s13, totalBankcode)) {
+                return "102";
+                } else if (Pattern.matches(s14, totalBankcode) || Pattern.matches(s15, totalBankcode) || Pattern.matches(s16, totalBankcode) || Pattern.matches(s17, totalBankcode) || Pattern.matches(s18, totalBankcode)) {
+                return "103";
+                } else if (Pattern.matches(s19, totalBankcode) || Pattern.matches(s20, totalBankcode) || Pattern.matches(s21, totalBankcode) || Pattern.matches(s22, totalBankcode) || Pattern.matches(s23, totalBankcode) || Pattern.matches(s24, totalBankcode) || Pattern.matches(s25, totalBankcode)) {
+                return "104";
+                } else if (Pattern.matches(s26, totalBankcode) || Pattern.matches(s27, totalBankcode) || Pattern.matches(s28, totalBankcode) || Pattern.matches(s29, totalBankcode) || Pattern.matches(s30, totalBankcode) || Pattern.matches(s31, totalBankcode) || Pattern.matches(s32, totalBankcode) || Pattern.matches(s33, totalBankcode)) {
+                return "105";
+                } else if (Pattern.matches(s34, totalBankcode) || Pattern.matches(s35, totalBankcode) || Pattern.matches(s36, totalBankcode) || Pattern.matches(s37, totalBankcode) || Pattern.matches(s38, totalBankcode) || Pattern.matches(s39, totalBankcode) || Pattern.matches(s40, totalBankcode)) {
+                return "301";
+                } else if (Pattern.matches(s41, totalBankcode) || Pattern.matches(s42, totalBankcode) || Pattern.matches(s43, totalBankcode) || Pattern.matches(s44, totalBankcode) || Pattern.matches(s45, totalBankcode) || Pattern.matches(s46, totalBankcode)) {
+                return "308";
+                } else if (Pattern.matches(s47, totalBankcode) || Pattern.matches(s48, totalBankcode) || Pattern.matches(s49, totalBankcode)) {
+                return "305";
+                } else if (Pattern.matches(s50, totalBankcode) || Pattern.matches(s51, totalBankcode) || Pattern.matches(s52, totalBankcode) || Pattern.matches(s53, totalBankcode) || Pattern.matches(s54, totalBankcode)) {
+                return "303";
+                } else if (Pattern.matches(s55, totalBankcode) || Pattern.matches(s56, totalBankcode) || Pattern.matches(s57, totalBankcode) || Pattern.matches(s58, totalBankcode)) {
+                return "302";
+                } else if (Pattern.matches(s59, totalBankcode) || Pattern.matches(s60, totalBankcode)) {
+                return "304";
+                } else if (Pattern.matches(s61, totalBankcode) || Pattern.matches(s62, totalBankcode) || Pattern.matches(s63, totalBankcode) || Pattern.matches(s64, totalBankcode)) {
+                return "307";
+                } else if (Pattern.matches(s65, totalBankcode) || Pattern.matches(s66, totalBankcode) || Pattern.matches(s67, totalBankcode) || Pattern.matches(s68, totalBankcode) || Pattern.matches(s69, totalBankcode)) {
+                return "309";
+                }else if (Pattern.matches(s70, totalBankcode) || Pattern.matches(s71, totalBankcode) || Pattern.matches(s72, totalBankcode)) {
+                return "401";
+                } else if (Pattern.matches(s73, totalBankcode) || Pattern.matches(s74, totalBankcode) || Pattern.matches(s75, totalBankcode) || Pattern.matches(s76, totalBankcode) || Pattern.matches(s77, totalBankcode)) {
+                return "310";
+                } else if (Pattern.matches(s79, totalBankcode) || Pattern.matches(s80, totalBankcode) || Pattern.matches(s81, totalBankcode) || Pattern.matches(s82, totalBankcode)) {
+                return "306";
+                } else if (Pattern.matches(s83, totalBankcode)) {
+                return "317";
+                } else if (Pattern.matches(s84, totalBankcode)) {
+                return "413";
+                } else if (Pattern.matches(s85, totalBankcode) || Pattern.matches(s86, totalBankcode)) {
+                return "426";
+                } else if (Pattern.matches(s87, totalBankcode) || Pattern.matches(s88, totalBankcode)) {
+                return "412";
+                } else if (Pattern.matches(s89, totalBankcode) || Pattern.matches(s90, totalBankcode) || Pattern.matches(s91, totalBankcode)) {
+                return "440";
+                } else if (Pattern.matches(s92, totalBankcode) || Pattern.matches(s93, totalBankcode) || Pattern.matches(s94, totalBankcode)) {
+                return "1501";
+                } else if (Pattern.matches(s95, totalBankcode) || Pattern.matches(s96, totalBankcode)) {
+                return "424";
+                } else if (Pattern.matches(s97, totalBankcode) || Pattern.matches(s98, totalBankcode) || Pattern.matches(s99, totalBankcode)) {
+                return "408";
+                } else if (Pattern.matches(s100, totalBankcode) || Pattern.matches(s101, totalBankcode)) {
+                return "403";
+                } else if (Pattern.matches(s102, totalBankcode) || Pattern.matches(s103, totalBankcode)) {
+                return "1418";
+                } else if (Pattern.matches(s104, totalBankcode) || Pattern.matches(s105, totalBankcode) || Pattern.matches(s106, totalBankcode) || Pattern.matches(s107, totalBankcode)) {
+                return "3000";
+                } else if (Pattern.matches(s108, totalBankcode) || Pattern.matches(s109, totalBankcode)) {
+                return "3034";
+                } else if (Pattern.matches(s110, totalBankcode) || Pattern.matches(s111, totalBankcode)) {
+                return "3010";
+                } else if (Pattern.matches(s112, totalBankcode) || Pattern.matches(s113, totalBankcode) || Pattern.matches(s114, totalBankcode)) {
+                return "3001";
+                } else if (Pattern.matches(s115, totalBankcode)) {
+                return "1554";
+                } else if (Pattern.matches(s116, totalBankcode)) {
+                return "1404";
+                } else if (Pattern.matches(s117, totalBankcode)) {
+                return "1405";
+                } else if (Pattern.matches(s118, totalBankcode) || Pattern.matches(s119, totalBankcode)) {
+                return "1415";
+                } else if (Pattern.matches(s133, totalBankcode) || Pattern.matches(s134, totalBankcode)) {
+                return "311";
+                } else if (Pattern.matches(s138, totalBankcode) || Pattern.matches(s139, totalBankcode)) {
+                return "316";
+                } else if (Pattern.matches(s140, totalBankcode) || Pattern.matches(s141, totalBankcode) || Pattern.matches(s142, totalBankcode) || Pattern.matches(s143, totalBankcode)) {
+                return "3002";
+                } else if (Pattern.matches(s144, totalBankcode) || Pattern.matches(s145, totalBankcode) || Pattern.matches(s146, totalBankcode)) {
+                return "402";
+                } else if (Pattern.matches(s147, totalBankcode) || Pattern.matches(s148, totalBankcode) || Pattern.matches(s149, totalBankcode)) {
+                return "405";
+                } else if (Pattern.matches(s150, totalBankcode) || Pattern.matches(s151, totalBankcode) || Pattern.matches(s152, totalBankcode)) {
+                return "451";
+                } else if (Pattern.matches(s153, totalBankcode) || Pattern.matches(s154, totalBankcode)) {
+                return "414";
+                } else if (Pattern.matches(s155, totalBankcode) || Pattern.matches(s156, totalBankcode) || Pattern.matches(s157, totalBankcode) || Pattern.matches(s158, totalBankcode)) {
+                return "417";
+                } else if (Pattern.matches(s159, totalBankcode) || Pattern.matches(s160, totalBankcode) || Pattern.matches(s161, totalBankcode)) {
+                return "420";
+                } else if (Pattern.matches(s162, totalBankcode) || Pattern.matches(s163, totalBankcode)) {
+                return "422";
+                } else if (Pattern.matches(s164, totalBankcode) || Pattern.matches(s165, totalBankcode)) {
+                return "427";
+                } else if (Pattern.matches(s166, totalBankcode) || Pattern.matches(s167, totalBankcode) || Pattern.matches(s168, totalBankcode)) {
+                return "428";
+                } else if (Pattern.matches(s169, totalBankcode)) {
+                return "1528";
+                } else if (Pattern.matches(s170, totalBankcode) || Pattern.matches(s171, totalBankcode) || Pattern.matches(s172, totalBankcode)) {
+                return "430";
+                } else if (Pattern.matches(s173, totalBankcode) || Pattern.matches(s174, totalBankcode) || Pattern.matches(s175, totalBankcode)) {
+                return "435";
+                } else if (Pattern.matches(s176, totalBankcode) || Pattern.matches(s177, totalBankcode)) {
+                return "436";
+                } else if (Pattern.matches(s178, totalBankcode) || Pattern.matches(s179, totalBankcode)) {
+                return "441";
+                } else if (Pattern.matches(s180, totalBankcode) || Pattern.matches(s181, totalBankcode) || Pattern.matches(s182, totalBankcode)) {
+                return "442";
+                } else if (Pattern.matches(s183, totalBankcode) || Pattern.matches(s184, totalBankcode)) {
+                return "447";
+                } else if (Pattern.matches(s185, totalBankcode) || Pattern.matches(s186, totalBankcode)) {
+                return "450";
+                } else if (Pattern.matches(s187, totalBankcode) || Pattern.matches(s188, totalBankcode)) {
+                return "457";
+                } else if (Pattern.matches(s189, totalBankcode) || Pattern.matches(s190, totalBankcode) || Pattern.matches(s191, totalBankcode)) {
+                return "458";
+                } else if (Pattern.matches(s192, totalBankcode) || Pattern.matches(s193, totalBankcode) || Pattern.matches(s194, totalBankcode) || Pattern.matches(s195, totalBankcode) || Pattern.matches(s196, totalBankcode)) {
+                return "459";
+                } else if (Pattern.matches(s197, totalBankcode) || Pattern.matches(s198, totalBankcode) || Pattern.matches(s199, totalBankcode) || Pattern.matches(s200, totalBankcode)) {
+                return "461";
+                } else if (Pattern.matches(s201, totalBankcode) || Pattern.matches(s202, totalBankcode) || Pattern.matches(s203, totalBankcode) || Pattern.matches(s204, totalBankcode)) {
+                return "464";
+                } else if (Pattern.matches(s205, totalBankcode) || Pattern.matches(s206, totalBankcode) || Pattern.matches(s207, totalBankcode)) {
+                return "479";
+                } else if (Pattern.matches(s208, totalBankcode) || Pattern.matches(s209, totalBankcode) || Pattern.matches(s210, totalBankcode) || Pattern.matches(s211, totalBankcode)) {
+                return "1518";
+                } else if (Pattern.matches(s212, totalBankcode) || Pattern.matches(s213, totalBankcode) || Pattern.matches(s214, totalBankcode)) {
+                return "1401";
+                } else if (Pattern.matches(s215, totalBankcode) || Pattern.matches(s216, totalBankcode)) {
+                return "473";
+                } else if (Pattern.matches(s217, totalBankcode) || Pattern.matches(s218, totalBankcode)) {
+                return "474";
+                } else if (Pattern.matches(s219, totalBankcode) || Pattern.matches(s220, totalBankcode)) {
+                return "478";
+                } else if (Pattern.matches(s221, totalBankcode) || Pattern.matches(s222, totalBankcode) || Pattern.matches(s223, totalBankcode)) {
+                return "491";
+                } else if (Pattern.matches(s224, totalBankcode) || Pattern.matches(s225, totalBankcode) || Pattern.matches(s226, totalBankcode) || Pattern.matches(s227, totalBankcode) || Pattern.matches(s228, totalBankcode)) {
+                return "1518";
+                } else if (Pattern.matches(s229, totalBankcode) || Pattern.matches(s230, totalBankcode)) {
+                return "1528";
+                } else if (Pattern.matches(s231, totalBankcode) || Pattern.matches(s232, totalBankcode)) {
+                return "1417";
+                } else if (Pattern.matches(s235, totalBankcode) || Pattern.matches(s236, totalBankcode)) {
+                return "1424";
+                } else if (Pattern.matches(s237, totalBankcode)) {
+                return "1438";
+                } else if (Pattern.matches(s238, totalBankcode) || Pattern.matches(s239, totalBankcode)) {
+                return "1439";
+                } else if (Pattern.matches(s240, totalBankcode) || Pattern.matches(s241, totalBankcode)) {
+                return "1515";
+                } else if (Pattern.matches(s242, totalBankcode) || Pattern.matches(s243, totalBankcode)) {
+                return "313";
+                } else if (Pattern.matches(s244, totalBankcode)) {
+                return "1532";
+                } else if (Pattern.matches(s246, totalBankcode)) {
+                return "1438";
+                } else if (Pattern.matches(s247, totalBankcode)) {
+                return "1503";
+                } else if (Pattern.matches(s248, totalBankcode)) {
+                return "1434";
+                } else if (Pattern.matches(s251, totalBankcode) || Pattern.matches(s252, totalBankcode)) {
+                return "1508";
+                } else if (Pattern.matches(s253, totalBankcode) || Pattern.matches(s254, totalBankcode)) {
+                return "1512";
+                } else if (Pattern.matches(ss254, totalBankcode)) {
+                return "1504";
+                } else if (Pattern.matches(s255, totalBankcode)) {
+                return "1523";
+                } else if (Pattern.matches(s257, totalBankcode) || Pattern.matches(s258, totalBankcode) || Pattern.matches(s256, totalBankcode)) {
+                return "495";
+                } else if (Pattern.matches(s259, totalBankcode) || Pattern.matches(s260, totalBankcode)) {
+                return "481";
+                } else if (Pattern.matches(s261, totalBankcode)) {
+                return "475";
+                } else if (Pattern.matches(s262, totalBankcode) || Pattern.matches(s263, totalBankcode)) {
+                return "462";
+                } else if (Pattern.matches(s264, totalBankcode) || Pattern.matches(s265, totalBankcode)) {
+                return "463";
+                } else if (Pattern.matches(s266, totalBankcode)) {
+                return "455";
+                } else if (Pattern.matches(s267, totalBankcode) || Pattern.matches(s268, totalBankcode) || Pattern.matches(s269, totalBankcode)) {
+                return "448";
+                } else if (Pattern.matches(s270, totalBankcode) || Pattern.matches(s271, totalBankcode) || Pattern.matches(s272, totalBankcode)) {
+                return "443";
+                } else if (Pattern.matches(s273, totalBankcode) || Pattern.matches(s274, totalBankcode)) {
+                return "439";
+                } else if (Pattern.matches(s275, totalBankcode) || Pattern.matches(s276, totalBankcode)) {
+                return "438";
+                } else if (Pattern.matches(s277, totalBankcode) || Pattern.matches(s278, totalBankcode)) {
+                return "437";
+                } else if (Pattern.matches(s279, totalBankcode)) {
+                return "433";
+                } else if (Pattern.matches(s282, totalBankcode) || Pattern.matches(s283, totalBankcode)) {
+                return "423";
+                } else if (Pattern.matches(s284, totalBankcode)) {
+                return "421";
+                } else if (Pattern.matches(s285, totalBankcode)) {
+                return "419";
+                } else if (Pattern.matches(s286, totalBankcode)) {
+                return "418";
+                } else if (Pattern.matches(s287, totalBankcode) || Pattern.matches(s288, totalBankcode)) {
+                return "411";
+                } else if (Pattern.matches(s290, totalBankcode)) {
+                return "3036";
+                } else if (Pattern.matches(s291, totalBankcode)) {
+                return "3026";
+                } else if (Pattern.matches(s292, totalBankcode)) {
+                return "3023";
+                } else if (Pattern.matches(s293, totalBankcode)) {
+                return "3025";
+                } else if (Pattern.matches(s294, totalBankcode) || Pattern.matches(s295, totalBankcode) || Pattern.matches(s296, totalBankcode) || Pattern.matches(s297, totalBankcode)) {
+                return "3003";
+                } else if (Pattern.matches(s299, totalBankcode)) {
+                return "404";
+                } else if (Pattern.matches(s300, totalBankcode) || Pattern.matches(s301, totalBankcode)) {
+                return "409";
+                }  else if (Pattern.matches(s304, totalBankcode) || Pattern.matches(s305, totalBankcode) || Pattern.matches(s306, totalBankcode) || Pattern.matches(s307, totalBankcode)) {
+                return "3005";
+                }
+                return bankId;
+                }
 
-
-public String getBankName() {
+        /**
+         * 获取银行名称
+         * @return  银行名称
+         */
+        public String getBankName() {
         if (Pattern.matches(s1, totalBankcode) || Pattern.matches(s2, totalBankcode) || Pattern.matches(s3, totalBankcode)) {
         return "邮储银行";
         } else if (Pattern.matches(s4, totalBankcode) || Pattern.matches(s5, totalBankcode) || Pattern.matches(s6, totalBankcode) || Pattern.matches(s7, totalBankcode) || Pattern.matches(s8, totalBankcode) || Pattern.matches(s9, totalBankcode) || Pattern.matches(s10, totalBankcode) || Pattern.matches(s11, totalBankcode) || Pattern.matches(s12, totalBankcode) || Pattern.matches(s13, totalBankcode)) {
@@ -933,23 +935,27 @@ public String getBankName() {
         }
         }
 
-public void setBankName(String bankName) {
-        this.bankName = bankName;
-        }
+        /**
+         * 设置银行名称
+         * @param bankName 传入银行名称
+         */
+        public void setBankName(String bankName) {
+                this.bankName = bankName;
+                }
 
-public void setBankId(String bankId) {
-        this.bankId = bankId;
-        }
+        /**
+         * 设置银行id
+         * @param bankId 传入银行Id
+         */
+        public void setBankId(String bankId) {
+                this.bankId = bankId;
+                }
 
-public String getReg() {
-        return reg;
-        }
-
-public void setReg(String reg) {
-        this.reg = reg;
-        }
-
-public String getCardType() {
+        /**
+         * 获取银行卡类型
+         * @return 储蓄卡、信用卡、准贷记卡、预付费卡、无法识别
+         */
+        public String getCardType() {
         if (Pattern.matches(s1, totalBankcode) || Pattern.matches(s2, totalBankcode) || Pattern.matches(s4, totalBankcode) || Pattern.matches(s5, totalBankcode) || Pattern.matches(s6, totalBankcode) || Pattern.matches(s7, totalBankcode)
         || Pattern.matches(s14, totalBankcode) || Pattern.matches(s15, totalBankcode) || Pattern.matches(s16, totalBankcode)
         || Pattern.matches(s19, totalBankcode) || Pattern.matches(s20, totalBankcode) || Pattern.matches(s26, totalBankcode) || Pattern.matches(s27, totalBankcode) || Pattern.matches(s28, totalBankcode)

@@ -1,4 +1,4 @@
-package com.phsxy.utils;
+package com.phsxy.utils.utils;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -14,7 +14,7 @@ import java.text.DecimalFormat;
  * Copyright  : Copyright (c) 2018
  * Company    : 普华
  * Author     : marven
- * Date       : 2019/3/7 19:05
+ * Date       : 2019/3/11 19:05
  */
 public class StringUtils {
 
@@ -31,7 +31,11 @@ public class StringUtils {
         return str;
     }
 
-
+    /**
+     * 复制文本
+     * @param context 上下文本
+     * @param content 复制内容
+     */
     public static void copyText(Context context, String content) {
         // 获取系统剪贴板
         ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
@@ -265,7 +269,12 @@ public class StringUtils {
         DecimalFormat df = new DecimalFormat("0.0000");
         return df.format(mDouble);
     }
-
+    /**
+     * 转换double后两位
+     * @param mDouble
+     *         原始数值
+     * @return String 显示
+     */
     public static String getParseDouble2(Double mDouble) {
         if (mDouble == null) {
             return "0.00";
