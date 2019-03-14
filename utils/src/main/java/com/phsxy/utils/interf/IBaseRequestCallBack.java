@@ -7,23 +7,24 @@ package com.phsxy.utils.interf;
  **/
 public interface IBaseRequestCallBack<T> {
     /**
-     * @descriptoin	请求之前的操作
+     * 	请求之前的操作
+     * @param  isshow 是否显示加载框
      */
     void beforeRequest(boolean isshow);
 
     /**
-     * @descriptoin	请求异常
+     * @	请求异常
      * @param throwable 异常类型
      */
     void requestError(Throwable throwable);
 
     /**
-     * @descriptoin	请求完成
+     * 请求完成
      */
     void requestComplete();
 
     /**
-     * @descriptoin	请求成功
+     * 	请求成功
      * @param callBack 根据业务返回相应的数据
      */
     void requestSuccess(int type, T callBack);

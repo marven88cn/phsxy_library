@@ -16,7 +16,7 @@ public interface IHandler {
     /**
      * Handler消息事件驱动
      *
-     * @param
+     * @param msg
      */
     void onMessage(Message msg);
 }

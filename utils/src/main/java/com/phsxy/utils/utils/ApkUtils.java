@@ -94,7 +94,7 @@ public class ApkUtils {
      * 从apk中获取版本信息
      * @param context  上下文
      * @param channelPrefix apk路径 默认放在meta-inf/目录下
-     * @return
+     * @return 返回获取到的版本信息
      */
     public static String getChannelFromApk(Context context, String channelPrefix) {
         //从apk包中获取

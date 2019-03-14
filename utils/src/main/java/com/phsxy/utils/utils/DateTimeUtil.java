@@ -411,9 +411,9 @@ public class DateTimeUtil {
 
 
     /**
-     *
-     * @param time
-     * @return
+     * 字符时间转long
+     * @param time  字符时间
+     * @return long类型时间
      */
     @SuppressLint("SimpleDateFormat")
     public static long getLongTime(String time) {
