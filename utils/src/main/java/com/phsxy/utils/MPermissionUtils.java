@@ -10,7 +10,6 @@ import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.content.ContextCompat;
 
-import com.phsxy.utils.interf.IOnPermissionListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +25,17 @@ public class MPermissionUtils {
 
     private static int mRequestCode = -1;
 
+    public interface IOnPermissionListener {
+
+        /**
+         * 授权成功
+         */
+        void onPermissionGranted();
+        /**
+         * 拒绝授权
+         */
+        void onPermissionDenied();
+    }
     /**
      * Activity 请求权限
      * @param activity 上下文
