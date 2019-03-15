@@ -1,16 +1,11 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 
-import android.content.Context;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.phsxy.utils.R;
 
 /**
  * Description: toast提示工具类

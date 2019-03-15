@@ -1,4 +1,4 @@
-package com.phsxy.utils.base;
+package com.phsxy.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

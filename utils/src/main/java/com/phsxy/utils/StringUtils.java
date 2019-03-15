@@ -1,4 +1,4 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

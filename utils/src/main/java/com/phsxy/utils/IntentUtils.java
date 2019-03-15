@@ -1,9 +1,10 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
 /**
  * Description:activity之间跳转
  * Copyright  : Copyright (c) 2018

@@ -1,6 +1,7 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 
 import android.content.Context;
+
 /**
  * Description: App 上下文
  * Copyright  : Copyright (c) 2018

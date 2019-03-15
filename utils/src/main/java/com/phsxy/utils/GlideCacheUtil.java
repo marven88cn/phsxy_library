@@ -1,4 +1,4 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 
 import android.content.Context;
 import android.os.Looper;
@@ -10,6 +10,7 @@ import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
 
 import java.io.File;
 import java.math.BigDecimal;
+
 /**
  * Description:
  * Copyright  : Copyright (c) 2018

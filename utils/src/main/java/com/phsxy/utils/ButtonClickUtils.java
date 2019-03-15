@@ -1,4 +1,4 @@
-package com.phsxy.utils.utils;
+package com.phsxy.utils;
 /**
  * Description: 按钮防止多点
  * Copyright  : Copyright (c) 2018
