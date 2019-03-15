@@ -5,7 +5,6 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import com.phsxy.utils.interf.IEditTextChangeListener;
 
 /**
  * Description:监听edittext输入
@@ -17,6 +16,10 @@ import com.phsxy.utils.interf.IEditTextChangeListener;
  * Date       : 2019/3/13 14:33
  */
 public class EditChangeUtils {
+
+    public interface IEditTextChangeListener {
+        void textChange(boolean ischange);
+    }
     static IEditTextChangeListener mChangeListener;
 
     /**
