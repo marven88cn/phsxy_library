@@ -7,6 +7,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 
+import com.phsxy.utils.constant.PermissionConstants;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,7 +25,6 @@ import java.util.zip.ZipFile;
  * Date       : 2019/3/11 19:05
  */
 public class ApkUtils {
-
     /**
      * 安装一个apk文件
      */
