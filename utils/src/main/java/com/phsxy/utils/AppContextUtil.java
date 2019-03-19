@@ -24,7 +24,7 @@ public class AppContextUtil {
      * 初始化工具类中上下文对象
      * @return 上下文
      */
-     static Context getInstance() {
+     public static Context getInstance() {
         if (sContext == null) {
             throw new NullPointerException("the context is null,please init AppContextUtil in Application first.");
         }
