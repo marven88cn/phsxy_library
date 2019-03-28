@@ -34,6 +34,9 @@ public class DateTimeUtil {
     /** 日期格式：HH:mm **/
     public static final String DF_HH_MM = "HH:mm";
 
+    /** 日期格式：mm:ss **/
+    public static final String DF_MM_SS = "mm:ss";
+
     private final static long minute = 60 * 1000;// 1分钟
     private final static long hour = 60 * minute;// 1小时
     private final static long day = 24 * hour;// 1天
@@ -570,5 +573,50 @@ public class DateTimeUtil {
         }
 
         return dateStr;
+    }
+    /**
+     * 将1000秒转化为时分秒格式
+     * @param time 毫秒值
+     * @return  时分秒
+     */
+    public static String secToTime(int time) {
+        String timeStr = null;
+        int hour = 0;
+        int minute = 0;
+        int second = 0;
+        if (time <= 0)
+            return "00:00";
+        else {
+            second = time / 1000;
+            minute = second / 60;
+            if (second < 60) {
+//                timeStr = "00:00:" + unitFormat(second) + "." + unitFormat2(millisecond);
+                timeStr = "00:" + unitFormat(second);
+            } else if (minute < 60) {
+                second = second % 60;
+                timeStr = unitFormat(minute) + ":" + unitFormat(second);
+            } else {//数字>=3600 000的时候
+                hour = minute / 60;
+                minute = minute % 60;
+                second = second - hour * 3600 - minute * 60;
+                timeStr = unitFormat(hour) + ":" + unitFormat(minute) + ":" + unitFormat(second);
+            }
+        }
+        return timeStr;
+
+    }
+
+    /**
+     * 时分秒的格式转换
+     * @param i int类型值
+     * @return 字符串
+     */
+    private static String unitFormat(int i) {
+        String retStr = null;
+        if (i >= 0 && i < 10)
+            retStr = "0" + Integer.toString(i);
+        else
+            retStr = "" + i;
+        return retStr;
     }
 }
