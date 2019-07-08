@@ -76,7 +76,8 @@ public class EditChangeUtils {
          */
         private boolean checkAllEdit() {
             for (EditText editText:editTexts){
-                if (!TextUtils.isEmpty(editText.getText() + "")){
+                String tempStr = editText..getText().toString().trim();
+                if (!TextUtils.isEmpty(tempStr)){
                     continue;
                 }else {
                     return false;
